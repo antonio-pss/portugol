@@ -1,14 +1,20 @@
 programa {
+
+  inclua biblioteca Texto --> t
+
   funcao inicio() {
-    caracter a
+    cadeia a
 
-    escreva("Escreva uma qualquer letra: ")
+    escreva("Escreva uma letra qualquer: ")
     leia(a)
+    a = t.caixa_alta(a)
 
-    se(a == 'a' ou a == 'e' ou a == 'i' ou a == 'o' ou a == 'u' ou a == 'A' ou a == 'E' ou a == 'I' ou a == 'O' ou a == 'U'){
-      escreva("É uma vogal")
+    se(a == 'A' ou a == 'E' ou a == 'I' ou a == 'O' ou a == 'U'){
+      escreva("Ã‰ uma vogal.")
+    }senao se(a >= 'A' e a <= 'Z'){
+      escreva("Ã‰ uma consoante.")
     }senao{
-      escreva("É uma consoante...ou um número...ou outra coisa...")
+      escreva("Ã‰ um nÃºmero...ou outra coisa.")
     }
   }
 }
