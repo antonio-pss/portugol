@@ -2,7 +2,7 @@ programa {
   funcao inicio() {
     inteiro contagem
 
-    escreva("Escreva o número que irei contar até: ")
+    escreva("Escreva o nÃºmero que irei contar atÃ©: ")
     leia(contagem)
 
     para(inteiro aux = 0; aux <= contagem; aux++){
